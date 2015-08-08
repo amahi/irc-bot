@@ -9,6 +9,9 @@ cd GitPython-0.3.2
 sudo python setup.py install
 cd
 sudo rm -rf GitPython*
-wget 2pro.co.nz/AmahiWorld.tar
-tar xvf AmahiWorld.tar
-rm -rf AmahiWorld.tar
+wget https://github.com/amahi/irc-bot/raw/master/Files/Releases/MS2/AmahiWorld_MS2.tar
+tar xvf AmahiWorld_MS2.tar
+rm -rf AmahiWorld_MS2.tar
+cd AmahiWorld
+wget https://github.com/amahi/irc-bot/raw/master/Files/startbot.sh
+chmod 755 startbot.sh
