@@ -19,7 +19,7 @@ rm -rf *.sh
 rm -rf plugins
 rm -rf web
 rm -rf tmp
-wget "https://raw.githubusercontent.com/amahi/irc-bot/master/Files/Releases/MS$MS/AmahiWorld_MS$MS.tar
+wget "https://raw.githubusercontent.com/amahi/irc-bot/master/Files/Releases/MS$MS/AmahiWorld_MS$MS.tar"
 tar xvf AmahiWorld_MS$MS.tar
 rm -rf AmahiWorld_MS$MS.tar
 cd AmahiWorld
