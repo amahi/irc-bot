@@ -16,9 +16,9 @@ rm -rf AmahiWorld_MS$MS.tar
 cd AmahiWorld
 mv * ../
 cd
-#wget https://github.com/amahi/irc-bot/raw/master/Files/Scripts/startbot.sh
+rm -rf startbot.sh
+wget https://github.com/amahi/irc-bot/raw/master/Files/Scripts/startbot.sh
 chmod 755 startbot.sh
-cd
 rm -rf AmahiWorld
 mkdir .awupdater
 cd .awupdater
@@ -30,6 +30,7 @@ cd
 ./startbot
 crontab -l > crontmp
 echo "0 1 * * * /home/amahiworld/.awupdater/updater" > crontmp
+echo "@reboot /home/amahiworld/startbot.sh" >> crontmp
 crontab crontmp
 rm -rf crontmp
 rm -rf amahiworld

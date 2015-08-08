@@ -11,7 +11,9 @@ From a user prompt with sudo access, run:
 
 wget git.io/amahiworld && chmod 755 amahiworld && ./amahiworld
 
-Once this is complete, all you have to do is run startbot.sh inside AmahiWorld
+Once this is complete, the bot will autostart.
+
+There is an updater that runs at 1AM every morning that checks for an update.
 
 Note
 ====
