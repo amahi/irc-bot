@@ -13,7 +13,7 @@ wget https://github.com/amahi/irc-bot/raw/master/Files/Releases/MS3/AmahiWorld_M
 tar xvf AmahiWorld_MS3.tar
 rm -rf AmahiWorld_MS3.tar
 cd AmahiWorld
-wget https://github.com/amahi/irc-bot/raw/master/Files/Scripts/startbot.sh
+#wget https://github.com/amahi/irc-bot/raw/master/Files/Scripts/startbot.sh
 chmod 755 startbot.sh
 cd
 rm -rf amahiworld
