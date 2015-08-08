@@ -1,11 +1,13 @@
 #!/bin/bash
-cd ~/.awupdater
+cd /home/amahiworld/.awupdater
 current=$(cat "current")
 MS=$(curl https://raw.githubusercontent.com/amahi/irc-bot/master/Installer/Refs/ref)
-if($current == $MS) {
+if [ "$current" == "$MS" ]
+then
 echo "No Updates Found"
-}
-if($current < $MS) {
+fi
+if [ "$current" -lt "$MS" ]
+then
 cd /home/amahiworld
 pkill supybot
 rm -rf *.conf*
@@ -17,7 +19,7 @@ rm -rf *.sh
 rm -rf plugins
 rm -rf web
 rm -rf tmp
-wget "https://raw.githubusercontent.com/amahi/irc-bot/master/Files/Releases/MS$MS/AmahiWorld_MS$MS.tar"
+wget "https://raw.githubusercontent.com/amahi/irc-bot/master/Files/Releases/MS$MS/AmahiWorld$
 tar xvf AmahiWorld_MS$MS.tar
 rm -rf AmahiWorld_MS$MS.tar
 cd AmahiWorld
@@ -28,4 +30,5 @@ rm -rf AmahiWorld
 cd .awupdater
 rm -rf current
 echo "$MS" > current
-}
+./startbot.sh
+fi
