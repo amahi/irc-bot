@@ -16,4 +16,4 @@ Once this is complete, all you have to do is run startbot.sh inside AmahiWorld
 Note
 ====
 
-Teh user MUST be named amahiworld for the install to complete successfully
+The user MUST be named amahiworld for the install to complete successfully
