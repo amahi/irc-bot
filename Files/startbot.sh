@@ -1,2 +1,2 @@
 #!/bin/bash
-screen -S AmahiWorld -d supybot AmahiWorld.conf
+screen -S AmahiWorld -d -m supybot AmahiWorld.conf
