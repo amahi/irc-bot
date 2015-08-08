@@ -7,6 +7,15 @@ echo "No Updates Found"
 }
 if($current < $MS) {
 pkill supybot
+rm -rf *.conf*
+rm -rf backup
+rm -rf conf
+rm -rf data
+rm -rf logs
+rm -rf *.sh
+rm -rf plugins
+rm -rf web
+rm -rf tmp
 wget "https://raw.githubusercontent.com/amahi/irc-bot/master/Files/Releases/MS$MS/AmahiWorld_MS$MS.tar"
 tar xvf AmahiWorld_MS$MS.tar
 rm -rf AmahiWorld_MS$MS.tar
@@ -14,3 +23,4 @@ cd AmahiWorld
 mv * ../
 cd
 ./startbot.sh
+}

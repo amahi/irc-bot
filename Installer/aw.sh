@@ -14,7 +14,18 @@ wget "https://raw.githubusercontent.com/amahi/irc-bot/master/Files/Releases/MS$M
 tar xvf AmahiWorld_MS$MS.tar
 rm -rf AmahiWorld_MS$MS.tar
 cd AmahiWorld
+mv * ../
+cd
 #wget https://github.com/amahi/irc-bot/raw/master/Files/Scripts/startbot.sh
 chmod 755 startbot.sh
 cd
+rm -rf AmahiWorld
+mkdir .awupdater
+cd .awupdater
+touch current
+wget https://raw.githubusercontent.com/amahi/irc-bot/master/Installer/updater
+echo "$MS" >current
+./updater
+cd
+./startbot
 rm -rf amahiworld
