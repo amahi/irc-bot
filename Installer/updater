@@ -2,6 +2,7 @@
 cd /home/amahiworld/.awupdater
 current=$(cat "current")
 MS=$(curl https://raw.githubusercontent.com/amahi/irc-bot/master/Installer/Refs/ref)
+pkill supybot
 if [ "$current" == "$MS" ]
 then
 echo "No Updates Found"
@@ -9,7 +10,6 @@ fi
 if [ "$current" -lt "$MS" ]
 then
 cd /home/amahiworld
-pkill supybot
 rm -rf *.conf*
 rm -rf backup
 rm -rf conf
@@ -26,8 +26,8 @@ cd AmahiWorld
 mv * ../
 cd ..
 rm -rf AmahiWorld
-./startbot.sh
 cd .awupdater
 rm -rf current
 echo "$MS" > current
 fi
+./startbot.sh
