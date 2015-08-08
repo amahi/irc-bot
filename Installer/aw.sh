@@ -10,7 +10,7 @@ sudo python setup.py install
 cd
 sudo rm -rf GitPython*
 MS=$(curl https://raw.githubusercontent.com/amahi/irc-bot/master/Installer/Refs/ref)
-wget "https://raw.githubusercontent.com/amahi/irc-bot/master/Files/Releases/MS$MS/AmahiWorld_MS$MS.tar"
+wget https://raw.githubusercontent.com/amahi/irc-bot/master/Files/Releases/MS$MS/AmahiWorld_MS$MS.tar
 tar xvf AmahiWorld_MS$MS.tar
 rm -rf AmahiWorld_MS$MS.tar
 cd AmahiWorld
