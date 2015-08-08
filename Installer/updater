@@ -30,5 +30,5 @@ rm -rf AmahiWorld
 cd .awupdater
 rm -rf current
 echo "$MS" > current
-./startbot.sh
+nohup /home/amahiworld/startbot.sh&
 fi
