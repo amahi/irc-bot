@@ -28,7 +28,6 @@ echo "$MS" >current
 chmod 755 updater
 ./updater
 cd
-./startbot
 crontab -l > crontmp
 echo "0 1 * * * /home/amahiworld/.awupdater/updater" > crontmp
 echo "@reboot /home/amahiworld/startbot.sh" >> crontmp
