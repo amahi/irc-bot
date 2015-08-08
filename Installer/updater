@@ -1,0 +1,16 @@
+#!/bin/bash
+cd ~/.awupdater
+current=$(cat "current")
+MS=$(curl https://raw.githubusercontent.com/amahi/irc-bot/master/Installer/Refs/ref)
+if($current == $MS) {
+echo "No Updates Found"
+}
+if($current < $MS) {
+pkill supybot
+wget "https://raw.githubusercontent.com/amahi/irc-bot/master/Files/Releases/MS$MS/AmahiWorld_MS$MS.tar"
+tar xvf AmahiWorld_MS$MS.tar
+rm -rf AmahiWorld_MS$MS.tar
+cd AmahiWorld
+mv * ../
+cd
+./startbot.sh
