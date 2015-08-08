@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt-get install -y python-pip git wget tar zip unzip
+sudo apt-get install -y python-pip git wget tar zip unzip screen
 sudo pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt --upgrade
 sudo pip install git+https://github.com/ProgVal/Limnoria.git@master --upgrade
 wget https://pypi.python.org/packages/source/G/GitPython/GitPython-0.3.2.tar.gz
@@ -15,3 +15,5 @@ rm -rf AmahiWorld_MS2.tar
 cd AmahiWorld
 wget https://github.com/amahi/irc-bot/raw/master/Files/startbot.sh
 chmod 755 startbot.sh
+cd
+rm -rf amahiworld
