@@ -22,6 +22,10 @@ tar xvf AmahiWorld_MS$MS.tar
 rm -rf AmahiWorld_MS$MS.tar
 cd AmahiWorld
 mv * ../
-cd
+cd ..
+rm -rf AmahiWorld
 ./startbot.sh
+cd .awupdater
+rm -rf current
+echo "$MS" > current
 }

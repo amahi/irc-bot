@@ -25,6 +25,7 @@ cd .awupdater
 touch current
 wget https://raw.githubusercontent.com/amahi/irc-bot/master/Installer/updater
 echo "$MS" >current
+chmod 755 updater
 ./updater
 cd
 ./startbot
