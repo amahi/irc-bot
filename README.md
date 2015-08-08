@@ -12,3 +12,8 @@ From a user prompt with sudo access, run:
 wget git.io/amahiworld && chmod 755 amahiworld && ./amahiworld
 
 Once this is complete, all you have to do is run startbot.sh inside AmahiWorld
+
+Note
+====
+
+Teh user MUST be named amahiworld for the install to complete successfully
