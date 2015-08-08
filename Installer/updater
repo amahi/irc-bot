@@ -6,6 +6,7 @@ if($current == $MS) {
 echo "No Updates Found"
 }
 if($current < $MS) {
+cd /home/amahiworld
 pkill supybot
 rm -rf *.conf*
 rm -rf backup

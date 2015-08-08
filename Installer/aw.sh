@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt-get install -y python-pip git wget tar zip unzip screen curl
+sudo apt-get install -y python-pip git wget tar zip unzip screen curl cron
 sudo pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt --upgrade
 sudo pip install git+https://github.com/ProgVal/Limnoria.git@master --upgrade
 wget https://pypi.python.org/packages/source/G/GitPython/GitPython-0.3.2.tar.gz
@@ -28,4 +28,8 @@ echo "$MS" >current
 ./updater
 cd
 ./startbot
+crontab -l > crontmp
+echo "0 1 * * * /home/amahiworld/.awupdater/updater" > crontmp
+crontab crontmp
+rm -rf crontmp
 rm -rf amahiworld
