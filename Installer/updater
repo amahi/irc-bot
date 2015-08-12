@@ -30,4 +30,5 @@ cd .awupdater
 rm -rf current
 echo "$MS" > current
 fi
+cd /home/amahiworld
 ./startbot.sh
